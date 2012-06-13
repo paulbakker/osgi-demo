@@ -1,0 +1,5 @@
+-buildpath: agenda.api;version=latest,\
+	org.apache.felix.dependencymanager
+-buildpackages: org.osgi.framework
+Private-Package: agenda.service.simple
+Bundle-Activator: agenda.service.simple.Activator

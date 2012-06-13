@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
+
+<repository lastmodified='20120612095025.788' name='Release'>
+  <resource id='agenda.api/1.0.0' presentationname='agenda.api' symbolicname='agenda.api' uri='agenda.api/agenda.api-1.0.0.jar' version='1.0.0'>
+    <size>
+      3465
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='agenda.api'/>
+      <p n='symbolicname' v='agenda.api'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='agenda.api'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+  </resource>
+  <resource id='agenda.client.console/1.0.0' presentationname='agenda.client.console' symbolicname='agenda.client.console' uri='agenda.client.console/agenda.client.console-1.0.0.jar' version='1.0.0'>
+    <size>
+      5109
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='agenda.client.console'/>
+      <p n='symbolicname' v='agenda.client.console'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=agenda.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package agenda.api ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.dm)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.dm ;version=[3.0.0,4.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='agenda.mongo/1.0.0' presentationname='agenda.mongo' symbolicname='agenda.mongo' uri='agenda.mongo/agenda.mongo-1.0.0.jar' version='1.0.0'>
+    <size>
+      4406
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='agenda.mongo'/>
+      <p n='symbolicname' v='agenda.mongo'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=agenda.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package agenda.api ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=com.mongodb)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.mongodb
+    </require>
+    <require extend='false' filter='(&amp;(package=net.vz.mongodb.jackson)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package net.vz.mongodb.jackson ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.amdatu.mongo)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.amdatu.mongo ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='agenda.rest/1.0.0' presentationname='agenda.rest' symbolicname='agenda.rest' uri='agenda.rest/agenda.rest-1.0.0.jar' version='1.0.0'>
+    <size>
+      3531
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='agenda.rest'/>
+      <p n='symbolicname' v='agenda.rest'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=agenda.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package agenda.api ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.ws.rs)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.ws.rs ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.jackson)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.jackson ;version=[1.9.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.jackson.map)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.jackson.map ;version=[1.9.0,2.0.0)
+    </require>
+  </resource>
+</repository>

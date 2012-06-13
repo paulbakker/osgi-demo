@@ -1,0 +1,16 @@
+<MetaData xmlns='http://www.osgi.org/xmlns/metatype/v1.0.0'>
+  <OCD name='ocd' id='ocd'>
+  	<AD id='dbName' type='STRING' cardinality='0' />
+    <AD id='mongoURI' type='STRING' cardinality='0' />
+  </OCD>
+  <Designate factoryPid='org.amdatu.mongo' pid='org.amdatu.mongo-demo'  bundle="osgi-dp:org.amdatu.mongo">
+    <Object ocdref='ocd'>
+      <Attribute adref='dbName'>
+        <Value><![CDATA[bejug]]></Value>
+      </Attribute>	
+      <Attribute adref='mongoURI'>
+        <Value><![CDATA[mongodb://localhost]]></Value>
+      </Attribute>
+    </Object>
+  </Designate>
+</MetaData>

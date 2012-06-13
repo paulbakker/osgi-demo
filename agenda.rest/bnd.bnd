@@ -1,0 +1,9 @@
+-buildpath: org.amdatu.web.dispatcher,\
+	org.amdatu.web.rest.jaxrs,\
+	org.amdatu.web.rest.wink,\
+	jackson-core-asl,\
+	jackson-mapper-asl,\
+	agenda.api;version=latest
+-plugin: org.apache.felix.dm.annotation.plugin.bnd.AnnotationPlugin;log=warn;path:="${build}/buildrepo/org.apache.felix.dependencymanager.annotation-3.0.0.jar,${build}/buildrepo/json-20070829.jar"
+Private-Package: agenda.rest
+Bundle-Version: 1.0.0
